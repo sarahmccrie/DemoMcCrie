@@ -1,0 +1,22 @@
+name: Lab3 github actions
+
+on: push
+
+jobs:
+  job1:
+    name: Lab3 job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        uses: actions/checkout@v4
+      - name: step2
+        run: pwd
+
+  job2:
+    name: Lab3 job2
+    runs-on: windows-latest
+    steps:
+      - name: step1
+        uses: actions/checkout@v4
+      - name: step2
+        run: echo Wow!
